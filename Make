@@ -1,4 +1,4 @@
--R src HIT
+-R src HIT COQC = hoqc COQDEP = hoqdep
 
 src/Ch01.v
 src/Ch02.v

@@ -1,5 +1,8 @@
 Require Export HoTT Ch09.
 
+(*Inductive dep_eq {A} {B:A->Type} : forall (x y:A), (x=y) -> B x -> B y -> Type :=
+| dep_refl : forall (x:A) (z:B x), dep_eq x x (refl x) z z.*)
+
 Inductive acc {A : hSet} {L : A -> A -> hProp} : A -> Type :=
   | accL : forall a : A, (forall b : A, (L b a) -> acc b) -> acc a.
 
